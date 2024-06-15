@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://csd8qie864krb"]
+
+[ext_resource type="Texture2D" uid="uid://dtvn3jcf2yo3u" path="res://addons/Tiny Swords/Resources/Gold Mine/GoldMine_Destroyed.png" id="1_4pdjt"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_322wf"]
+radius = 37.0
+height = 128.079
+
+[node name="Node2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -25)
+rotation = 1.57808
+shape = SubResource("CapsuleShape2D_322wf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -30)
+texture = ExtResource("1_4pdjt")
