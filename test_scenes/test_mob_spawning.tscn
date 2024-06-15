@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5a122sjbrg70"]
+
+[ext_resource type="PackedScene" uid="uid://dkbmyyi0u6r1x" path="res://player/player.tscn" id="1_fxoxn"]
+[ext_resource type="PackedScene" uid="uid://cipm1m3unhpbh" path="res://systems/mob_spawner.tscn" id="1_xt4bx"]
+
+[node name="TestMobSpawning" type="Node2D"]
+
+[node name="MobSpawner" parent="." instance=ExtResource("1_xt4bx")]
+
+[node name="Player" parent="." instance=ExtResource("1_fxoxn")]
+position = Vector2(264, 203)

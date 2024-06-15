@@ -1,0 +1,151 @@
+[gd_scene load_steps=5 format=3 uid="uid://v32k3exme7xk"]
+
+[ext_resource type="Texture2D" uid="uid://yvmcdr5v1g60" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Red/Warrior_Red.png" id="1_60dwx"]
+[ext_resource type="PackedScene" uid="uid://dkbmyyi0u6r1x" path="res://player/player.tscn" id="2_ptvi6"]
+[ext_resource type="PackedScene" uid="uid://dkn5wxn21f5bd" path="res://enemies/pawn.tscn" id="3_ixyse"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1wxgq"]
+line_spacing = 19.0
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(-1320, -74)
+
+[node name="WarriorRed" type="Sprite2D" parent="."]
+position = Vector2(556, 513)
+texture = ExtResource("1_60dwx")
+
+[node name="Label" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = -0.081
+anchor_top = 0.252
+anchor_right = -0.081
+anchor_bottom = 0.252
+offset_left = 753.312
+offset_top = -1083.07
+offset_right = 790.312
+offset_bottom = -1054.07
+text = "Idle"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = -0.081
+anchor_top = 0.252
+anchor_right = -0.081
+anchor_bottom = 0.252
+offset_left = 753.312
+offset_top = -902.072
+offset_right = 790.312
+offset_bottom = -873.072
+text = "run"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = -0.081
+anchor_top = 0.252
+anchor_right = -0.081
+anchor_bottom = 0.252
+offset_left = 705.312
+offset_top = -697.072
+offset_right = 808.312
+offset_bottom = -668.072
+text = "attack_side_1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = -0.081
+anchor_top = 0.252
+anchor_right = -0.081
+anchor_bottom = 0.252
+offset_left = 701.312
+offset_top = -484.072
+offset_right = 804.312
+offset_bottom = -455.072
+text = "attack_side_2"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label5" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = -0.081
+anchor_top = 0.252
+anchor_right = -0.081
+anchor_bottom = 0.252
+offset_left = 693.312
+offset_top = -333.072
+offset_right = 808.312
+offset_bottom = -304.072
+text = "attack_down_1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label6" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = -0.081
+anchor_top = 0.252
+anchor_right = -0.081
+anchor_bottom = 0.252
+offset_left = 703.312
+offset_top = -143.072
+offset_right = 818.312
+offset_bottom = -114.072
+text = "attack_down_2"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label7" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = -0.081
+anchor_top = 0.252
+anchor_right = -0.081
+anchor_bottom = 0.252
+offset_left = 702.312
+offset_top = 59.928
+offset_right = 817.312
+offset_bottom = 88.928
+text = "attack_up_1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label8" type="Label" parent="WarriorRed"]
+anchors_preset = -1
+anchor_left = -0.081
+anchor_top = 0.252
+anchor_right = -0.081
+anchor_bottom = 0.252
+offset_left = 702.312
+offset_top = 261.928
+offset_right = 817.312
+offset_bottom = 290.928
+text = "attack_up_2"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label9" type="Label" parent="WarriorRed"]
+offset_left = -501.0
+offset_top = -839.0
+offset_right = -425.0
+offset_bottom = -816.0
+scale = Vector2(5.54724, 4.60659)
+text = "0      1      2      3      4      5"
+
+[node name="Label10" type="Label" parent="WarriorRed"]
+offset_left = -684.0
+offset_top = -731.0
+offset_right = -667.0
+offset_bottom = -386.0
+scale = Vector2(5.54724, 4.60659)
+text = "0 1 2 3 4 5 6 7"
+label_settings = SubResource("LabelSettings_1wxgq")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Player" parent="." instance=ExtResource("2_ptvi6")]
+position = Vector2(1711, 371)
+motion_mode = 1
+
+[node name="Pawn" parent="." instance=ExtResource("3_ixyse")]
+position = Vector2(1734, 632)
+
+[node name="Pawn2" parent="." instance=ExtResource("3_ixyse")]
+position = Vector2(1957, 549)
+
+[node name="Pawn3" parent="." instance=ExtResource("3_ixyse")]
+position = Vector2(2003, 337)
